@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from localhost/ahramscan/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 12:36:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>AHRAM SCAN</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="16x16">
+    <meta name="description" content="scan,center">
+    <meta name="keywords" content="radiology,scan">
+    <meta name="author" content="ahramscan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/js-offcanvas.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="http://localhost/ahramscan/assets/css/rtl.css">-->
+
+</head>
+
+<body class="loading">
+    <div class='top'></div>
+  <!--<img id="bg" src="http://localhost/ahramscan/assets/img/bg-sm.png">-->
+<div id="overlayer"></div>
+<span class="loader">
+  <span class="loader-inner"></span>
+</span>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fas fa-angle-double-up" aria-hidden="true"></i></div>
+</div>
+
+<div class="fixed-appoint">
+
+  <a href="#"><i class="far fa-calendar-check"></i> appointment</a> 
+</div>
+
+<!-- bottom callus bar -->
+
+<div class="bottom-call text-center visible-xs">
+  <p><a href="tel:0123456789"><i class="fas fa-phone-square"></i>  Call us :0123456789 </a></p>
+  
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Make an appointment now</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="Full name" class="control-label">Name:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="Phone" class="control-label">Phone number:</label>
+                    <input type="number" class="form-control" id="number">
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="control-label">E-mail:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                  <div class="form-group">  
+                      <label for="selectpicker" class="control-label">Section :</label>
+                    <select id="selectpicker" class="selectpicker form-control">
+                        <option selected="selected">Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="message-text" class="control-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send</button>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="top-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="list-inline">
+              <li><a href= "#" data-toggle="modal" data-target="#myModal">MAKE AN APPOINTMENT</a></li>
+                  
+                  <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 linkat">
+             <!-- <p class="rtfix">Whatsapp:0102354687 - Hotline:19773</p> -->
+             <ul class="list-inline rtfix">
+               <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+               <li><a href="https://wa.me/15551234567"><i class="fab fa-whatsapp-square"></i></a></li>
+               <li><a href="tel:0221292000"><span><i class="fas fa-phone-square"></i>Hotline: 19773</span> </a></li>
+             </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" id="mNavbar" role="navigation">
+      <div class="container">
+            <div class="navbar-header">
+                 <a href="#off-canvas" class="js-offcanvas-trigger navbar-toggle collapsed" data-toggle="collapse"  data-offcanvas-trigger="off-canvas" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <p class="cola">Menu</p>
+        </a>
+        
+              <a class="navbar-brand" id="navbar-brand1" href="index-2.html" ><img src="assets/img/logo.png"></a>
+              
+            </div>
+            <div class=" navbar-right ">
+                <i class="fas fa-share-alt hidden"></i>
+                <a href="#" class="btn" id="btn">report/test results</a>
+            </div>
+         
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+               
+                  <li><a href="index-2.html">Home</a></li>
+                  <li><a href="radiology.html#panelBodyone">Diagnostic Radiology</a></li>
+                  <li><a href="tests.html">Medical tests</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        
+<!-- new nav -->
+
+  <aside class="js-offcanvas" data-offcanvas-options='{ "modifiers": "left,overlay" }' id="off-canvas">
+  
+    <div class="off-logo">
+      <img src="assets/img/logo.png">
+    </div>
+   
+  </aside>
+<!-- end new nav -->
+
+        <!-- section 2 slider  -->
+   <section class="slider">
+     <div class="slider-wrap">
+      <div id="main-slider" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="img-wrapper">
+            <img src="assets/img/sn1.png">
+            <div class="caption animated fadeInBig delay-1">
+              <h2>WOMEN'S HEALTH UNIT</h2>
+              <p class="hidden-xs">AHRAM SCAN is dedicated to raising the bar of excellence in women’s health,
+                 offering women access to one-stop quality healthcare. From a screening mammography to a breast biopsy,
+                 our center is fully equipped to make sure every woman is happy and healthy!</p>
+               
+            </div>
+          </div>
+            </div>
+          <div class="item"><div class="img-wrapper">
+              <img src="assets/img/sn2.png">
+              <div class="caption">
+                  <h2 >BEST DIAGNOSTIC SERVICES</h2>
+                  <p class="hidden-xs">Using state-of-the-art imaging and safe equipment,AHRAM SCAN offers advanced techniques and procedures offered by
+                     our experienced doctors to deliver the best and most effective diagnosis to our patients. Driven by an enormous amount of innovation, our MRI unit
+                     presents unparalleled advanced applications and functional techniques that deliver best results and precise diagnosis.</p>
+                </div></div>
+            </div>
+          <div class="item"><div class="img-wrapper">
+              <img src="assets/img/sn3.png">
+              <div class="caption ">
+                  <h2>ADVANCED INTERVENTIONAL UNIT</h2>
+                  <p class="hidden-xs">Pioneers in Interventional Radiology with a track record of success in treating all cases! Our team of doctors offer the most in-depth knowledge 
+                    of the least invasive treatments available coupled with diagnostic and clinical experience across all specialties.</p>
+                </div></div>
+            </div>
+          
+      </div>
+    </div>
+    <div class="clear-fix"></div>
+   </section>   
+   
+   <!-- section 3 why us -->
+   <section class="why-us">
+     <div class="container">
+       <div class="row">
+         <div class="why-boxes wow fadeIn animated" data-wow-duration="1s">
+         <div class="col-xs-6 col-sm-3 col-md-3">
+           <div class="why-box">
+             <div class="head-sec">
+                <img src="assets/img/w3.jpg" class="img-responsive">
+             </div>
+             <div class="bottom-sec">
+                <p>LONG HISTORY OF SUCCESS<br>
+                    Since 1989</p>
+             </div>
+           </div>
+         </div>
+         <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="why-box">
+              <div class="head-sec">
+                 <img src="assets/img/w1.jpg" class="img-responsive">
+              </div>
+              <div class="bottom-sec">
+                 <p>EXPERIENCED DOCTORS
+                    <br>
+                    and Staff</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="why-box">
+                <div class="head-sec">
+                   <img src="assets/img/w4.jpg" class="img-responsive">
+                </div>
+                <div class="bottom-sec">
+                   <p>ADVANCED TECHNOLOGY
+                      <br>
+                      and Techniques</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <div class="why-box">
+                  <div class="head-sec">
+                     <img src="assets/img/w2.jpg" class="img-responsive">
+                  </div>
+                  <div class="bottom-sec">
+                     <p>BEST PATIENT QUALITY
+                        <br>
+                        and Care</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+       </div>
+     </div>
+   </section>      
+   
+   <!-- section 4 about us --> 
+   <section class="about">
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+           <div class="title">
+           <h2>ABOUT US</h2>
+          </div>
+         </div>
+       </div>
+     </div>
+     <div class="container demo-bg">
+       <div class="row">
+         <div class="col-xs-12 col-sm-6">
+           <div class="about-txt wow fadeInLeft animated" data-wow-duration="1.5s">
+            <p>AHRAM SCAN is a highly prestigious and advanced Radiology center in Egypt providing round
+               the clock services for patients. Backed by a team of highly qualified radiologists, 
+               trained professionals and paramedical staff, AHRAM SCAN offers a wide range of services for the 
+               diagnosis & treatment of both vascular and non-vascular procedures. 
+              </p>
+            <p>Visit us and experience an unparalleled technical diagnosis!</p>  
+            <p>Our Center is equipped with a full team of Anesthesia doctors available 
+              throughout the day to make sure your procedure is as smooth and easy as possible.
+            </p>
+            <p>We have performed thousands of advanced techniques including high-end metabolic/functional MR
+               techniques. Please contact us if interested to conduct scientific research in our center.</p>
+               
+              </div>
+           </div>   
+         
+         <div class="col-xs-12  col-sm-6">
+            <div class="about-img wow fadeInRight animated" data-wow-duration="1.5s">
+              <img src="assets/img/contact-img.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- secrvices -->
+    
+      <section class="servicess">
+        <div class="serv-shape"></div>
+          <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="title">
+                  <h2>OUR SERVICES</h2>
+                 </div>
+                </div>
+              </div>
+            </div>
+         
+       <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+         <div class="services">
+            
+             <div class="serv-boxes ">
+               <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <a href="radiology.html">
+                  <div class="serv-box wow fadeInLeft animated" data-wow-duration="1.5s">
+                    <img src="assets/img/radio.jpg">
+                    <div class="layer"></div>
+                    <div class="layer1"></div>
+                      <div class="serv-layer">
+                        <p>DIAGNOSTIC RADIOLOGY</p>
+                        <!-- <button class="btn hvr-shutter-out-horizontal">see more</button> -->
+                      </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <a href="tests.html">
+                    <div class="serv-box wow fadeInLeft animated" data-wow-duration="1s">
+                        
+                            <img src="assets/img/mtest.jpg">
+                            <div class="layer"></div>
+                            <div class="layer1"></div>
+                              <div class="serv-layer">
+                                <p>MEDICAL TESTS</p>
+                                <!-- <button class="btn hvr-shutter-out-horizontal">see more</button> -->
+                              </div>
+                          </div> 
+                        </a>       
+                    </div>
+                  </div>
+                  </div>
+             </div> 
+            </div>
+          
+            <div class="col-xs-12  col-md-4">
+              <div class="hours shape paper wow fadeInRight " data-wow-duration="1.5s">
+              <div class="business-hours">
+                  <h2 class="title">Working Hours</h2>
+                  <!-- <ul class="list-unstyled opening-hours">
+                  <li>Sunday <span class="pull-right">Closed</span></li>
+                  <li>Monday <span class="pull-right">9:00-22:00</span></li>
+                  <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+                  <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+                  <li>Thursday <span class="pull-right">9:00-22:00</span></li>
+                  <li>Friday <span class="pull-right">9:00-23:30</span></li>
+                  <li>Saturday <span class="pull-right">14:00-23:30</span></li>
+                  </ul> -->
+                  <h2>We work 24/7 including official holidays</h2>
+                  <div class="con-btn text-center">
+                    <button data-toggle="modal" data-target="#myModal"class="hvr-shutter-out-horizontal hvr-icon-buzz">Make an appointment <i class="fas fa-phone-volume"></i></button>
+                  </div>
+                  
+                  <!-- <p><em><br>MRI department works 24 hours</em></p>
+                  <p><em><strong>*Friday Operating Departments<br>(maadi branch):</strong><br>
+                    - Ultrasound from 2 pm to 5 pm<br>
+                    - MRI from 9 am to 11 pm</em></p>
+  
+                    <h2 class="title">Fees & Insurance</h2>
+                    <p>For the convenience of our clients <strong>AHRAM SCAN&nbsp;</strong>
+                      provides direct insurance billing with all the major international insurance providers and assistance companies.</p> -->
+                  </div>
+                </div>
+            </div>
+
+          </div> 
+       </div>
+      
+    </section>
+   
+   
+
+   <!-- section 5 collaporation -->
+   <section class="collaporat">
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+            <div class="title">
+                <h2>COLLABORATION OPPORTUNITIES</h2>
+            </div>
+         </div>
+        
+         <div class="slider-container wow fadeIn animated">  
+         <div id="slider2" class="owl-carousel owl-theme">
+            <div class="item">
+               
+                    <div class="coll-box">
+                      <div class="coll-under"></div>
+                      <div class="coll-box-img">
+                          <img src="assets/img/p-1.png">
+                      </div>
+                      <div class="coll-box-text text-center">
+                         <h4>SCIENTIFIC RESEARCH</h4>
+                         <p>Stellar experience in advanced MR techniques. 
+                           Contact us to conduct scientific research at Ahram Scan.</p>
+                         
+                      </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+              
+                    <div class="coll-box">
+                        <div class="coll-under"></div>
+                        <div class="coll-box-img">
+                            <img src="assets/img/p-7.png">
+                        </div>
+                        <div class="coll-box-text text-center">
+                           <h4>TELE-RADIOLOGY REPORTING</h4>
+                           <p>Providing remote radiology reporting with high efficiency for all hospitals and clinics.
+                              Contact us to collaborate..</p>
+                          
+                        </div>
+                      </div>
+                    
+            </div>
+            <div class="item">
+               
+                    <div class="coll-box">
+                        <div class="coll-under"></div>
+                        <div class="coll-box-img">
+                            <img src="assets/img/p-6.png">
+                        </div>
+                        <div class="coll-box-text text-center">
+                           <h4>CORPORATE DEALS</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+                         
+                        </div>
+                      </div>
+                    
+            </div>
+            <div class="item">
+               
+                    <div class="coll-box">
+                        <div class="coll-under"></div>
+                        <div class="coll-box-img">
+                            <img src="assets/img/p-3.png">
+                        </div>
+                        <div class="coll-box-text text-center">
+                           <h4>CORPORATE DEALS</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+                        
+                        </div>
+                      </div>
+                    
+            </div>
+            <div class="item">
+               
+                    <div class="coll-box">
+                        <div class="coll-under"></div>
+                        <div class="coll-box-img">
+                            <img src="assets/img/p-1.png">
+                        </div>
+                        <div class="coll-box-text text-center">
+                           <h4>CORPORATE DEALS</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+                        
+                        </div>
+                      </div>
+                    
+            </div>
+
+         </div>
+         
+        </div>
+         <!-- <div class="col-sm-4 col-xs-12">
+            
+         </div>
+           
+         <div class="col-sm-4 col-xs-12">
+            
+          </div>
+          <div class="col-sm-4 col-xs-12">
+              
+            </div> -->
+       </div>
+     </div>
+   </section> 
+   
+   
+      <!-- section 6 contact us-->
+   <section class="contact-us">
+     <div class="over-lay"></div>
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+           <div class="contact-text text-center wow zoomIn animated" data-wow-duration="1s">
+           <h3>RESERVE AN APPOINTMENT OR CONSULT A DOCTOR?</h3>
+           <p>Call 01245 Now or Fill The Contact Form</p>
+           <a href="contact.html" class="btn hvr-shutter-out-horizontal">contact us <i class="fas fa-phone-volume"></i></a>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- footer -->
+   <footer>
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-3 col-xs-12">
+              <div class="f1 wow fadeIn animated" data-wow-duration="1s">
+                <img src="assets/img/logo.png">
+                <p> is a highly prestigious and advanced Radiology center in Egypt providing round the clock services for patients.
+                   Backed by a team of highly qualified radiologists.</p>
+              </div>
+         </div>
+         <div class="col-sm-3 col-xs-12">
+           <div class="f2 wow fadeIn animated" data-wow-duration="1s">
+             <h3>Contact-us</h3>
+             <ul class="list-unstyled">
+               <li><a href="#"><i class="fas fa-mobile-alt"></i>  01012345678</a></li>
+               <li><a href="#"><i class="fas fa-phone-alt"></i> 19000 </a></li>
+               <li><a href="#"><i class="fas fa-map-marker-alt"></i> 62 appasyia sq.</a></li>
+               <li><a href="#"><i class="fas fa-envelope-square"></i> info@ahramscan.com</a></li>
+               <li><a href="#"><i class="fab fa-facebook-f"></i> Follow Us</a></li>
+             </ul>
+              
+             
+           </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-12 ">
+              <div class="f2 wow fadeIn animated" data-wow-duration="1s">
+                <h3>Locations</h3>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 1.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 2.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 3.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 4.</a></li>
+                  
+                </ul>
+                 
+                
+              </div>
+             </div>
+
+          <div class="col-sm-3 col-xs-12">
+              <div class="f2 wow fadeIn animated" data-wow-duration="1s" >
+                  <h3>QUICK LINKS</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="radiology.html">Diagnostic Radiology</a></li>
+                      <li><a href="tests.html">Medical tests</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    
+                  </ul>
+                   
+                  
+                </div>
+            </div>
+       </div>
+     </div>
+     
+   </footer>
+   <div class="last-sec text-center">
+       
+      <p> © 2019 AHRAM SCAN Center. All rights reserved.developed By <a class="fot" herf="www.yisweb.com">YIS WEB</a></p>
+    
+    
+  </div>
+
+
+</body>
+
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/js-offcanvas.pkgd.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<!-- Mirrored from localhost/ahramscan/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 12:37:28 GMT -->
+</html>   

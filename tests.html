@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from localhost/ahramscan/tests.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 12:39:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>AHRAM SCAN</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="16x16">
+    <meta name="description" content="scan,center">
+    <meta name="keywords" content="radiology,scan">
+    <meta name="author" content="ahramscan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/js-offcanvas.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="http://localhost/ahramscan/assets/css/rtl.css">-->
+
+</head>
+
+<body class="loading">
+    <div class='top'></div>
+  <!--<img id="bg" src="http://localhost/ahramscan/assets/img/bg-sm.png">-->
+<div id="overlayer"></div>
+<span class="loader">
+  <span class="loader-inner"></span>
+</span>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fas fa-angle-double-up" aria-hidden="true"></i></div>
+</div>
+
+<div class="fixed-appoint">
+
+  <a href="#"><i class="far fa-calendar-check"></i> appointment</a> 
+</div>
+
+<!-- bottom callus bar -->
+
+<div class="bottom-call text-center visible-xs">
+  <p><a href="tel:0123456789"><i class="fas fa-phone-square"></i>  Call us :0123456789 </a></p>
+  
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Make an appointment now</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="Full name" class="control-label">Name:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="Phone" class="control-label">Phone number:</label>
+                    <input type="number" class="form-control" id="number">
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="control-label">E-mail:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                  <div class="form-group">  
+                      <label for="selectpicker" class="control-label">Section :</label>
+                    <select id="selectpicker" class="selectpicker form-control">
+                        <option selected="selected">Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="message-text" class="control-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send</button>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="top-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="list-inline">
+              <li><a href= "#" data-toggle="modal" data-target="#myModal">MAKE AN APPOINTMENT</a></li>
+                  
+                  <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 linkat">
+             <!-- <p class="rtfix">Whatsapp:0102354687 - Hotline:19773</p> -->
+             <ul class="list-inline rtfix">
+               <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+               <li><a href="https://wa.me/15551234567"><i class="fab fa-whatsapp-square"></i></a></li>
+               <li><a href="tel:0221292000"><span><i class="fas fa-phone-square"></i>Hotline: 19773</span> </a></li>
+             </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" id="mNavbar" role="navigation">
+      <div class="container">
+            <div class="navbar-header">
+                 <a href="#off-canvas" class="js-offcanvas-trigger navbar-toggle collapsed" data-toggle="collapse"  data-offcanvas-trigger="off-canvas" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <p class="cola">Menu</p>
+        </a>
+        
+              <a class="navbar-brand" id="navbar-brand1" href="index-2.html" ><img src="assets/img/logo.png"></a>
+              
+            </div>
+            <div class=" navbar-right ">
+                <i class="fas fa-share-alt hidden"></i>
+                <a href="#" class="btn" id="btn">report/test results</a>
+            </div>
+         
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+               
+                  <li><a href="index-2.html">Home</a></li>
+                  <li><a href="radiology.html#panelBodyone">Diagnostic Radiology</a></li>
+                  <li><a href="tests.html">Medical tests</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        
+<!-- new nav -->
+
+  <aside class="js-offcanvas" data-offcanvas-options='{ "modifiers": "left,overlay" }' id="off-canvas">
+  
+    <div class="off-logo">
+      <img src="assets/img/logo.png">
+    </div>
+   
+  </aside>
+<!-- end new nav -->
+<section id="test-img" class="hero-img">
+    <div class="over-lay"></div>
+    <div class="text addanim">
+        <h2>MEDICAL TESTS</h2>
+    </div>
+    
+</section>
+<div class="under-hero"></div> 
+
+<section class="radiology-cont">
+  <div class="test-1sec">
+        <div class="container">
+                <div class="row">
+                <div class="col-xs-12">
+                        <div class="eq-title text-center">
+                        <h3>What is medical tests?</h3>
+                        </div>
+                        <div class="eq-text wow fadeIn animated" data-wow-duration="1s">
+                            <p>
+                                   
+                                    A medical test is a medical procedure performed to detect, diagnose, or monitor diseases,
+                                     disease processes, susceptibility, or to determine a course of treatment.
+                                      Medical tests relate to clinical chemistry and molecular diagnostics,
+                                     and are typically performed in a medical laboratory.
+                            </p>
+                        </div>
+                    </div>
+                        
+                </div>
+                </div>
+              </div>  
+              
+              <div class="test-1sec">     
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-12">
+                <div class="outer">
+                        <div class="offer-title">
+                            <h2>Types of Medical tests</h2>
+                        </div>
+                    </div>
+        </div>
+    
+            
+                    <div class="col-xs-12">   
+                       
+                    
+                   
+        <ul class="bre wow fadeIn animated">
+            <li>Hamatology</li>
+            <li>Biochemistry</li>
+            <li>Microbiology</li>
+            <li>Endocrinology</li>
+            <li>Immunology</li>
+            <li>Allergy and molecular allergology</li>
+            <li>Molecular oncology</li>
+            <li>Maternal and fetal healt</li>
+        </ul>
+    </div>
+
+    </div>
+        </div>
+              </div>
+              <div class="test-1sec">
+        <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                            <div class="outer">
+                                    <div class="offer-title">
+                                        <h2>Medical test Programs</h2>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                <div id="accordion" class="panel-group wow fadeIn animated" data-wow-duration="1s">
+                  <div class="panel">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#panelBodyOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">programme One</a>
+                      </h4>
+                    </div>
+                    <div id="panelBodyOne" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                        <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">programme two</a>
+                      </h4>
+                    </div>
+                    <div id="panelBodyTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#panelBodyThree" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">programme three</a>
+                      </h4>
+                    </div>
+                    <div id="panelBodyThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+</section>
+ <!-- offer -->
+ <section class="offer">
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+             <div class="outer">
+            <div class="offer-title">
+                <h2>Our offers</h2>
+            </div>
+        </div>
+         </div>
+        
+         <div class="slider-container wow fadeIn animated">  
+         <div id="slider2" class="owl-carousel owl-theme">
+            
+            <div class="item">
+               
+                    <div class="offer-box">
+                        <div class="ribbon"><span>offer</span></div>
+                        <!-- <div class="offer-under"></div>
+                        <div class="offer-box-img">
+                            <img src="http://localhost/ahramscan/assets/img/p-1.png">
+                        </div> -->
+                        <div class="offer-box-text text-center">
+                           <h4>offer 1</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+            
+                        </div>
+                        <div class="botto-sec">
+                    <a data-toggle="modal" data-target="#myModal"class="hvr-shutter-out-horizontal btn">Make an appointment</a>
+
+                        </div>
+                      </div>
+                    
+            </div>
+            <div class="item">
+               
+                    <div class="offer-box">
+                            <div class="ribbon"><span>offer</span></div>
+                        <!-- <div class="offer-under"></div>
+                        <div class="offer-box-img">
+                            <img src="http://localhost/ahramscan/assets/img/p-1.png">
+                        </div> -->
+                        <div class="offer-box-text text-center">
+                           <h4>offer 2</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+            
+                        </div>
+                        <div class="botto-sec">
+                    <a data-toggle="modal" data-target="#myModal"class="hvr-shutter-out-horizontal btn">Make an appointment</a>
+
+                        </div>
+                      </div>
+                    
+            </div>
+            <div class="item">
+               
+                    <div class="offer-box">
+                            <div class="ribbon"><span>offer</span></div>
+                        <!-- <div class="offer-under"></div>
+                        <div class="offer-box-img">
+                            <img src="http://localhost/ahramscan/assets/img/p-1.png">
+                        </div> -->
+                        <div class="offer-box-text text-center">
+                           <h4>offer 3</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+            
+                        </div>
+                        <div class="botto-sec">
+                    <a data-toggle="modal" data-target="#myModal"class="hvr-shutter-out-horizontal btn">Make an appointment</a>
+
+                        </div>
+                      </div>
+                    
+            </div>
+            <div class="item">
+               
+                    <div class="offer-box">
+                            <div class="ribbon"><span>offer</span></div>
+                        <!-- <div class="offer-under"></div>
+                        <div class="offer-box-img">
+                            <img src="http://localhost/ahramscan/assets/img/p-1.png">
+                        </div> -->
+                        <div class="offer-box-text text-center">
+                           <h4>Coffer 4</h4>
+                           <p>We always seek collaborations with renowned corporates, 
+                             insurance companies and diverse institutions. Contact us to collaborate.</p>
+            
+                        </div>
+                        <div class="botto-sec">
+                    <a data-toggle="modal" data-target="#myModal"class="hvr-shutter-out-horizontal btn">Make an appointment</a>
+
+                        </div>
+                      </div>
+                    
+            </div>
+
+         </div>
+         
+        </div>
+       </div>
+     </div>
+   </section> 
+  
+
+   <!-- section 6 contact us-->
+   <section class="contact-us">
+     <div class="over-lay"></div>
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+           <div class="contact-text text-center wow zoomIn animated" data-wow-duration="1s">
+           <h3>RESERVE AN APPOINTMENT OR CONSULT A DOCTOR?</h3>
+           <p>Call 01245 Now or Fill The Contact Form</p>
+           <a href="contact.html" class="btn hvr-shutter-out-horizontal">contact us <i class="fas fa-phone-volume"></i></a>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- footer -->
+   <footer>
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-3 col-xs-12">
+              <div class="f1 wow fadeIn animated" data-wow-duration="1s">
+                <img src="assets/img/logo.png">
+                <p> is a highly prestigious and advanced Radiology center in Egypt providing round the clock services for patients.
+                   Backed by a team of highly qualified radiologists.</p>
+              </div>
+         </div>
+         <div class="col-sm-3 col-xs-12">
+           <div class="f2 wow fadeIn animated" data-wow-duration="1s">
+             <h3>Contact-us</h3>
+             <ul class="list-unstyled">
+               <li><a href="#"><i class="fas fa-mobile-alt"></i>  01012345678</a></li>
+               <li><a href="#"><i class="fas fa-phone-alt"></i> 19000 </a></li>
+               <li><a href="#"><i class="fas fa-map-marker-alt"></i> 62 appasyia sq.</a></li>
+               <li><a href="#"><i class="fas fa-envelope-square"></i> info@ahramscan.com</a></li>
+               <li><a href="#"><i class="fab fa-facebook-f"></i> Follow Us</a></li>
+             </ul>
+              
+             
+           </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-12 ">
+              <div class="f2 wow fadeIn animated" data-wow-duration="1s">
+                <h3>Locations</h3>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 1.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 2.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 3.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 4.</a></li>
+                  
+                </ul>
+                 
+                
+              </div>
+             </div>
+
+          <div class="col-sm-3 col-xs-12">
+              <div class="f2 wow fadeIn animated" data-wow-duration="1s" >
+                  <h3>QUICK LINKS</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="radiology.html">Diagnostic Radiology</a></li>
+                      <li><a href="tests.html">Medical tests</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    
+                  </ul>
+                   
+                  
+                </div>
+            </div>
+       </div>
+     </div>
+     
+   </footer>
+   <div class="last-sec text-center">
+       
+      <p> © 2019 AHRAM SCAN Center. All rights reserved.developed By <a class="fot" herf="www.yisweb.com">YIS WEB</a></p>
+    
+    
+  </div>
+
+
+</body>
+
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/js-offcanvas.pkgd.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<!-- Mirrored from localhost/ahramscan/tests.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 12:39:28 GMT -->
+</html>

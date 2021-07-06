@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from localhost/ahramscan/radiology.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 12:39:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>AHRAM SCAN</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="16x16">
+    <meta name="description" content="scan,center">
+    <meta name="keywords" content="radiology,scan">
+    <meta name="author" content="ahramscan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/js-offcanvas.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="http://localhost/ahramscan/assets/css/rtl.css">-->
+
+</head>
+
+<body class="loading">
+    <div class='top'></div>
+  <!--<img id="bg" src="http://localhost/ahramscan/assets/img/bg-sm.png">-->
+<div id="overlayer"></div>
+<span class="loader">
+  <span class="loader-inner"></span>
+</span>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fas fa-angle-double-up" aria-hidden="true"></i></div>
+</div>
+
+<div class="fixed-appoint">
+
+  <a href="#"><i class="far fa-calendar-check"></i> appointment</a> 
+</div>
+
+<!-- bottom callus bar -->
+
+<div class="bottom-call text-center visible-xs">
+  <p><a href="tel:0123456789"><i class="fas fa-phone-square"></i>  Call us :0123456789 </a></p>
+  
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Make an appointment now</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="Full name" class="control-label">Name:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="Phone" class="control-label">Phone number:</label>
+                    <input type="number" class="form-control" id="number">
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="control-label">E-mail:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                  <div class="form-group">  
+                      <label for="selectpicker" class="control-label">Section :</label>
+                    <select id="selectpicker" class="selectpicker form-control">
+                        <option selected="selected">Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="message-text" class="control-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send</button>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="top-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="list-inline">
+              <li><a href= "#" data-toggle="modal" data-target="#myModal">MAKE AN APPOINTMENT</a></li>
+                  
+                  <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 linkat">
+             <!-- <p class="rtfix">Whatsapp:0102354687 - Hotline:19773</p> -->
+             <ul class="list-inline rtfix">
+               <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+               <li><a href="https://wa.me/15551234567"><i class="fab fa-whatsapp-square"></i></a></li>
+               <li><a href="tel:0221292000"><span><i class="fas fa-phone-square"></i>Hotline: 19773</span> </a></li>
+             </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" id="mNavbar" role="navigation">
+      <div class="container">
+            <div class="navbar-header">
+                 <a href="#off-canvas" class="js-offcanvas-trigger navbar-toggle collapsed" data-toggle="collapse"  data-offcanvas-trigger="off-canvas" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <p class="cola">Menu</p>
+        </a>
+        
+              <a class="navbar-brand" id="navbar-brand1" href="index-2.html" ><img src="assets/img/logo.png"></a>
+              
+            </div>
+            <div class=" navbar-right ">
+                <i class="fas fa-share-alt hidden"></i>
+                <a href="#" class="btn" id="btn">report/test results</a>
+            </div>
+         
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+               
+                  <li><a href="index-2.html">Home</a></li>
+                  <li><a href="radiology.html#panelBodyone">Diagnostic Radiology</a></li>
+                  <li><a href="tests.html">Medical tests</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        
+<!-- new nav -->
+
+  <aside class="js-offcanvas" data-offcanvas-options='{ "modifiers": "left,overlay" }' id="off-canvas">
+  
+    <div class="off-logo">
+      <img src="assets/img/logo.png">
+    </div>
+   
+  </aside>
+<!-- end new nav -->
+<section class="hero-img">
+    <div class="over-lay"></div>
+    <div class="text addanim">
+        <h2>DIAGNOSTIC RADIOLOGY</h2>
+    </div>
+    
+</section>
+<div class="under-hero"></div>
+
+<section class="radiology-cont">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                            <div class="eq-title text-center">
+                            <h3>What is diagonstic radiology?</h3>
+                            </div>
+                            <div class="eq-text wow fadeIn animated" data-wow-duration="1s">
+                                <p>Radiology is the medical specialty that uses medical imaging to diagnose and treat diseases within the bodies of both humans and animals.
+
+                                        A variety of imaging techniques such as X-ray radiography, ultrasound, computed tomography (CT), nuclear medicine including positron emission tomography (PET),
+                                         and magnetic resonance imaging (MRI) are used to diagnose or treat diseases. Interventional radiology is the performance of usually minimally invasive medical
+                                          procedures with the guidance of imaging technologies such as those mentioned above.
+                                        
+                                        The modern practice of radiology involves several different healthcare professions working as a team.
+                                         The radiologist is a medical doctor who has completed the appropriate post-graduate training and interprets medical images,
+                                          communicates these findings to other physicians by means of a report or verbally, and uses imaging to perform minimally invasive medical procedures[1]. 
+                                          The nurse is involved in the care of patients before and after imaging or procedures, including administration of medications, monitoring of vital signs 
+                                          and monitoring of sedated patients.[2] The radiographer, also known as a "radiologic technologist" in some countries such as the United States, is a specially trained healthcare professional that uses sophisticated technology and positioning techniques to produce medical images for the radiologist to interpret. Depending on the individual's training and country of practice, the radiographer may specialize in one of the above-mentioned imaging modalities or have expanded roles in image reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                
+        <div class="container">
+                <div id="accordion" class="panel-group row wow fadeIn animated" data-wow-duration="1s">
+                  <!-- left accordion -->
+                  <div class="col-xs-12 col-sm-6">
+                      <div class="panel">
+                          <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a href="#panelBodyone" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">CT scan</a>
+                            </h4>
+                          </div>
+                          <div id="panelBodyone" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <div class="container">
+                                  
+                                      
+                                          <div class="accordion-title text-center">
+                                          <h2>CT SCAN</h2>
+                                          </div>
+                                     
+                                      <!-- <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2"> -->
+                                    
+                                          <div class="eq-img">
+                                              <img src="assets/img/s2.jpg">
+                                          </div>
+                                     
+                                     
+                                           <p>A CT scan is an x-ray procedure that is enhanced by a computer and gives out a 
+                                               three-dimensional view (referred to as a “slice”) of a particular part of the body. 
+                                               It is a highly sensitive method to accurately view the internal anatomy and detect extremely small lesions.
+                                                While dense tissue can block some areas during standard x-ray image procedures, CT scans create a three-dimensional
+                                                 view by using a computer to combine different slices, showing all bone and tissue. With modern CT scan, 
+                                                 the thin images can be further manipulated with a specialized computer to see the human body in ways that have never been seen before,
+                                                  helping doctors diagnose diseases more quickly and accurately. The procedure is non-invasive or minimally invasive,
+                                                   requires minimal radiation exposure and can simultaneously depict tissues of different densities,
+                                                which is not possible with traditional x-ray methods.</p> 
+                                 
+                                     
+                                          <h3>Duration :</h3>
+                                          <p>Depending on the size of the area being scanned, the examination can take from 5-10 minutes.</p>
+                                    
+                                   
+                                              <h3>Instructions :</h3>
+                                              <p>Metal objects such as jewelry, eyeglasses and hair clips should be removed prior to the procedure,
+                                                   along with hearing aids and removable dental work (Items to be removed according to the scanned area,
+                                                   no need to remove items from the whole body).</p>
+                                   
+                                                  <h3>How can i prepare :</h3>
+                                              <p>Regular CT Scan:
+      
+                                                      No preparation is required.
+                                                      
+                                                      CT Scan with Contrast:
+                                                      
+                                                      Do not eat or drink anything for six (6) hours prior to a CT with contrast examination. Patient needs to bring a recent kidney function test (Creatinine) to make sure the kidney function is sufficient to excrete the contrast.
+                                                      
+                                                      Note: Patients with renal dialysis should schedule their dialysis appointment right after the CT with contrast exam.</p>
+                              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Two</a>
+                      </h4>
+                    </div>
+                    <div id="panelBodyTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#panelBodyThree" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Three</a>
+                      </h4>
+                    </div>
+                    <div id="panelBodyThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- right accordion -->
+                <div class="col-xs-12 col-sm-6">
+                    <div class="panel">
+                      <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="#panelBodyfour" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">four</a>
+                        </h4>
+                      </div>
+                      <div id="panelBodyfour" class="panel-collapse collapse">
+                      <div class="panel-body">
+                          <div class="container">
+                              
+                                  
+                                      <div class="accordion-title text-center">
+                                      <h2>CT SCAN</h2>
+                                      </div>
+                                 
+                                  <!-- <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2"> -->
+                                
+                                      <div class="eq-img">
+                                          <img src="assets/img/s2.jpg">
+                                      </div>
+                                 
+                                 
+                                       <p>A CT scan is an x-ray procedure that is enhanced by a computer and gives out a 
+                                           three-dimensional view (referred to as a “slice”) of a particular part of the body. 
+                                           It is a highly sensitive method to accurately view the internal anatomy and detect extremely small lesions.
+                                            While dense tissue can block some areas during standard x-ray image procedures, CT scans create a three-dimensional
+                                             view by using a computer to combine different slices, showing all bone and tissue. With modern CT scan, 
+                                             the thin images can be further manipulated with a specialized computer to see the human body in ways that have never been seen before,
+                                              helping doctors diagnose diseases more quickly and accurately. The procedure is non-invasive or minimally invasive,
+                                               requires minimal radiation exposure and can simultaneously depict tissues of different densities,
+                                            which is not possible with traditional x-ray methods.</p> 
+                             
+                                 
+                                      <h3>Duration :</h3>
+                                      <p>Depending on the size of the area being scanned, the examination can take from 5-10 minutes.</p>
+                                
+                               
+                                          <h3>Instructions :</h3>
+                                          <p>Metal objects such as jewelry, eyeglasses and hair clips should be removed prior to the procedure,
+                                               along with hearing aids and removable dental work (Items to be removed according to the scanned area,
+                                               no need to remove items from the whole body).</p>
+                               
+                                              <h3>How can i prepare :</h3>
+                                          <p>Regular CT Scan:
+  
+                                                  No preparation is required.
+                                                  
+                                                  CT Scan with Contrast:
+                                                  
+                                                  Do not eat or drink anything for six (6) hours prior to a CT with contrast examination. Patient needs to bring a recent kidney function test (Creatinine) to make sure the kidney function is sufficient to excrete the contrast.
+                                                  
+                                                  Note: Patients with renal dialysis should schedule their dialysis appointment right after the CT with contrast exam.</p>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="#panelBodyfive" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">five</a>
+                        </h4>
+                      </div>
+                      <div id="panelBodyfive" class="panel-collapse collapse">
+                      <div class="panel-body">
+                          <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a href="#panelBodysix" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">six</a>
+                        </h4>
+                      </div>
+                      <div id="panelBodysix" class="panel-collapse collapse">
+                      <div class="panel-body">
+                          <p>Energistically drive standardized communities through user friendly results. Phosfluorescently initiate superior technologies vis-a-vis low-risk high-yield solutions. Objectively facilitate clicks-and-mortar partnerships vis-a-vis superior partnerships. Continually generate long-term high-impact methodologies via wireless leadership. Holisticly seize resource maximizing solutions via user friendly outsourcing.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+</section>
+
+   <!-- section 6 contact us-->
+   <section class="contact-us">
+     <div class="over-lay"></div>
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+           <div class="contact-text text-center wow zoomIn animated" data-wow-duration="1s">
+           <h3>RESERVE AN APPOINTMENT OR CONSULT A DOCTOR?</h3>
+           <p>Call 01245 Now or Fill The Contact Form</p>
+           <a href="contact.html" class="btn hvr-shutter-out-horizontal">contact us <i class="fas fa-phone-volume"></i></a>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- footer -->
+   <footer>
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-3 col-xs-12">
+              <div class="f1 wow fadeIn animated" data-wow-duration="1s">
+                <img src="assets/img/logo.png">
+                <p> is a highly prestigious and advanced Radiology center in Egypt providing round the clock services for patients.
+                   Backed by a team of highly qualified radiologists.</p>
+              </div>
+         </div>
+         <div class="col-sm-3 col-xs-12">
+           <div class="f2 wow fadeIn animated" data-wow-duration="1s">
+             <h3>Contact-us</h3>
+             <ul class="list-unstyled">
+               <li><a href="#"><i class="fas fa-mobile-alt"></i>  01012345678</a></li>
+               <li><a href="#"><i class="fas fa-phone-alt"></i> 19000 </a></li>
+               <li><a href="#"><i class="fas fa-map-marker-alt"></i> 62 appasyia sq.</a></li>
+               <li><a href="#"><i class="fas fa-envelope-square"></i> info@ahramscan.com</a></li>
+               <li><a href="#"><i class="fab fa-facebook-f"></i> Follow Us</a></li>
+             </ul>
+              
+             
+           </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-12 ">
+              <div class="f2 wow fadeIn animated" data-wow-duration="1s">
+                <h3>Locations</h3>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 1.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 2.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 3.</a></li>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> branch 4.</a></li>
+                  
+                </ul>
+                 
+                
+              </div>
+             </div>
+
+          <div class="col-sm-3 col-xs-12">
+              <div class="f2 wow fadeIn animated" data-wow-duration="1s" >
+                  <h3>QUICK LINKS</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="radiology.html">Diagnostic Radiology</a></li>
+                      <li><a href="tests.html">Medical tests</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    
+                  </ul>
+                   
+                  
+                </div>
+            </div>
+       </div>
+     </div>
+     
+   </footer>
+   <div class="last-sec text-center">
+       
+      <p> © 2019 AHRAM SCAN Center. All rights reserved.developed By <a class="fot" herf="www.yisweb.com">YIS WEB</a></p>
+    
+    
+  </div>
+
+
+</body>
+
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/js-offcanvas.pkgd.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<!-- Mirrored from localhost/ahramscan/radiology.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 12:39:28 GMT -->
+</html>
